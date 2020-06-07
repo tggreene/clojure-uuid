@@ -1,7 +1,7 @@
 (ns tggreene.uuid
   (:import [java.util UUID]))
 
-(def gregorian-to-epoch-seconds 122192928000000000)
+(def ^:private gregorian-to-epoch-seconds 122192928000000000)
 
 (defn generate-v6
   "Generate a v6 UUID according to proposal"
