@@ -4,10 +4,10 @@
 (def ^:private gregorian-to-epoch-seconds 122192928000000000)
 
 (defn generate-v6
-  "Generate a v6 UUID according to proposal"
+  "Generate a v6 UUID
+  [proposal](https://tools.ietf.org/html/draft-peabody-dispatch-new-uuid-format)"
   []
-  (let [;; take random bits from java.util v4 implementation
-        uuid (UUID/randomUUID)
+  (let [uuid (UUID/randomUUID) ;; take random bits from java.util v4 implementation
         ;; we can't resolve finer than some number of milliseconds on most
         ;; systems so we need to "fake" nanoseconds
         time (- (* (System/currentTimeMillis) 10000) gregorian-to-epoch-seconds)
