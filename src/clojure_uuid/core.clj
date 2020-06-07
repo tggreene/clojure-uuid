@@ -1,4 +1,4 @@
-(ns tggreene.uuid
+(ns clojure-uuid.core
   (:import [java.util UUID]))
 
 (def ^:private gregorian-to-epoch-seconds 122192928000000000)
