@@ -1,11 +1,10 @@
 # clojure-uuid
 
-A collection of uuid implementations for clojure including v6 proposal
-https://tools.ietf.org/html/draft-peabody-dispatch-new-uuid-format
+A rough implementation of https://tools.ietf.org/html/draft-peabody-dispatch-new-uuid-format
 
 ## Usage
 
-Currently there's only one type of uuid implemented:
+This library is designed to be used in conjunction with some git dependency resolver e.g. the excellent [lein-git-down](https://github.com/reifyhealth/lein-git-down). _It currently won't work with `tools.deps.alpha` as it doesn't accept `project.clj` as a valid manifest for dependencies_.
 
 ```clojure
 (require '[clojure-uuid.core :as clojure-uuid])
