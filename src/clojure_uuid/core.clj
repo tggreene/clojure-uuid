@@ -1,5 +1,6 @@
 (ns clojure-uuid.core
-  (:import [java.util UUID]))
+  (:import [java.util UUID])
+  (:gen-class))
 
 (def ^:private gregorian-to-epoch-seconds 122192928000000000)
 
